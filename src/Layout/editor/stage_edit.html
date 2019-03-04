@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+<!-- 여기 있는걸 App.js로 구현 -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Test page</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../../main.css">
+  <link rel="stylesheet" href="stage_edit.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row bg-dark">
+    <header class="col text-center bg-primary">
+      <h1>Stage Editor</h1>
+    </header>
+
+    <div class="content col-sm-12 bg-warning text-center">
+      <div id="edit-wrapper" class="bg-danger">
+        <div class="row">
+            <div class="col-sm-8 bg-danger" id="stage-sec">
+                <div id="editbuttons" class="btn-group-vertical bg-secondary">
+                    <button type="button" class="fb bg-success active" data-toggle="collapse" data-target="#tiles">Tiles</button>
+                    <button type="button" class="fb bg-info" data-toggle="collapse" data-target="#props">Props</button>
+                    <button type="button" class="fb bg-warning" data-toggle="collapse" data-target="#gameobj">GameObj</button>
+                </div>
+            </div>
+            <div class="col-sm-4 bg-secondary" id="edit-sec">
+                
+               <div class="fade collapse" data-parent="#edit-sec" id="tiles"> 
+                 <div class="flex-item">item</div>
+                 <div class="flex-item">item</div>
+                 <div class="flex-item">item</div>
+                 <div class="flex-item">item</div>
+               </div>
+
+               <div class="fade collapse" data-parent="#edit-sec" id="props"> 
+                 <div class="flex-item">item</div>
+                 <div class="flex-item">item</div>
+                 <div class="flex-item">item</div>
+                 <div class="flex-item">item</div>
+                 <div class="flex-item">item</div>
+                 <div class="flex-item">item</div>
+                 <div class="flex-item">item</div>
+                 <div class="flex-item">item</div>
+               </div>
+
+               <div class="fade collapse" data-parent="#edit-sec" id="gameobj"> 
+                 <div class="flex-item">item</div>
+                 <div class="flex-item">item</div>
+                 <div class="flex-item">item</div>
+                 <div class="flex-item">item</div>
+               </div> 
+            </div>
+        </div>
+      </div>
+    </div>  
+    <footer class="col-sm-12 bg-success">
+      I'm a simple footer
+    </footer>
+  </div>
+</div>
+
+</body>
+</html>

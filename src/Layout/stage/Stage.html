@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="">
+<!-- data parent 설정 -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Stage page</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="C:/Users/bbb24/OneDrive/문서/Trycoding/tc/src/main.css">
+  <link rel="stylesheet" href="Stage.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row bg-dark">
+    <header class="col text-center bg-primary">
+      <h1>Chapter 1</h1>
+    </header>
+
+    <div class="content col-sm-12 bg-warning text-center">
+      <div id="mainwrapper" class="bg-danger">
+        <div id="funcbuttons" class="btn-group bg-secondary">
+            <button type="button" class="fb bg-success">Save</button>
+            <button type="button" class="fb bg-info">Add</button>
+            <button type="button" class="fb bg-warning">Delete</button>
+        </div>
+        <div id="stagewrapper">
+            <ul class="d-flex flex-wrap">
+                <div class="stageholder">
+                  <li>
+                    <a href="#stage1" data-toggle="collapse">Stage 1</a>
+                  </li>
+                  <div id="stage1" class="collapse stagedes bg-success card" data-parent="#stagewrapper"><span class="card-header p-0">Title</span> <span class="card-body">Description</span></div>
+                </div>
+                <div class="stageholder">
+                  <li>
+                    <a href="#stage2" data-toggle="collapse">Stage 2</a>
+                  </li>
+                  <div id="stage2" class="collapse stagedes bg-success card" data-parent="#stagewrapper"><span class="card-header p-0">Title</span> <span class="card-body">Description</span></div>
+                </div>
+                <div class="stageholder">
+                  <li>
+                    <a href="#stage3" data-toggle="collapse">Stage 3</a>
+                  </li>
+                  <div id="stage3" class="collapse stagedes bg-success card" data-parent="#stagewrapper"><span class="card-header p-0">Title</span> <span class="card-body">Description</span></div>
+                </div>
+                <div class="stageholder">
+                  <li>
+                    <a href="#stage4" data-toggle="collapse">Stage 4</a>
+                  </li>
+                  <div id="stage4" class="collapse stagedes bg-success card" data-parent="#stagewrapper"><span class="card-header p-0">Title</span> <span class="card-body">Description</span></div>
+                </div>
+                <div class="stageholder">
+                  <li>
+                    <a href="#stage5" data-toggle="collapse">Stage 5</a>
+                  </li>
+                  <div id="stage5" class="collapse stagedes bg-success card" data-parent="#stagewrapper"><span class="card-header p-0">Title</span> <span class="card-body">Description</span></div>
+                </div>
+                
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="col-sm-12 bg-success">
+      I'm a simple footer
+    </footer>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* Stage_Edit 컴포넌트에 import. 해당 css는 기존 main css와는 레이아웃이 다르다. */
+
+header {
+    z-index: 1;
+    height: 10%;
+}
+#editbuttons {
+    margin-bottom: 15px;
+    right: 0;
+    top: 0;
+}
+#DI, #GOBJ {
+    font-size: 0.93rem;
+}
+.fb {
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 14px;
+    outline: none;
+}
+#otherbuttons div{
+    z-index: 1;
+}
+canvas {
+    position: absolute;
+    top: 97px;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+#edit-area {
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/* #description .card-body {
+    background-image: none;
+} */
+#stage-sec, #edit-sec {
+    overflow: auto;
+    height: 100%;
+}
+#stage-sec{
+    padding-left: 0;
+}
+#edit-sec {
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 1;
+}
+.flex-item {
+    zoom:28%;
+    background-color: black;
+    color: white;
+    margin: 0.2rem;
+    width: 256px;
+    height: 256px;
+    float: left;
+}
+div.items {
+    display: none;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 768px ) {
+    .flex-item {
+        zoom: 26.94%;
+    }
+    .fb {
+        font-size: 18px;
+    }
+
+    header, footer {
+    height: 15%;
+    text-align: center;
+    }
+
+    #mainwrapper {
+    width:100%;
+    margin: none;
+    padding: none;
+    border: none;
+    }
+}
+@media screen and (max-width: 575px ){
+    #stage-sec{
+        height: 80%;
+    }
+    #edit-sec {
+        height: 20%;
+    }
+    footer {
+        display: none;
+    }
+    .content {
+        height: 90%;
+    }
+}

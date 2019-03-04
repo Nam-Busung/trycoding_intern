@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="no-js" lang="">
+<!-- data parent 설정. 레이아웃 설정 -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Chapter page</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Chapter.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row bg-dark">
+    <header class="col text-center bg-primary">
+      <h1>Chapter Select</h1>
+    </header>
+
+    <div class="content col-sm-12 bg-warning text-center">
+      <div id="mainwrapper" class="bg-danger">
+        <div id="funcbuttons" class="btn-group bg-secondary">
+            <button type="button" class="fb bg-success">Save</button>
+            <button type="button" class="fb bg-info">Add</button>
+            <button type="button" class="fb bg-dark">Delete</button>
+        </div>
+        <div class="chapterItem">
+            <div class="btn-group">
+            <a class="btn btn-primary btn-block chapter-title" data-toggle="collapse" href="#chapter1">Chapter #1</a>
+            <button type="button" class="bg-warning go-btn">Go</button>
+            </div>
+          <p id="chapter1" class="collapse chapter-des fade" data-parent="#mainwrapper">Chapter 1 is so easy</p>
+        </div>
+        <div class="chapterItem">
+            <div class="btn-group">
+            <a class="btn btn-primary btn-block chapter-title" data-toggle="collapse" href="#chapter2">Chapter #2</a>
+            <button type="button" class="bg-warning go-btn">Go</button>
+            </div>
+          <p id="chapter2" class="collapse chapter-des fade" data-parent="#mainwrapper">Chapter 2 is so easy</p>
+        </div>
+        <div class="chapterItem">
+            <div class="btn-group">
+            <a class="btn btn-primary btn-block chapter-title" data-toggle="collapse" href="#chapter3">Chapter #3</a>
+            <button type="button" class="bg-warning go-btn">Go</button>
+            </div>
+          <p id="chapter3" class="collapse chapter-des fade" data-parent="#mainwrapper">Chapter 3 is so easy</p>
+        </div>
+      </div>
+    </div>  
+    <footer class="col-sm-12 bg-success">
+      I'm a simple footer
+    </footer>
+  </div>
+</div>
+
+</body>
+</html>

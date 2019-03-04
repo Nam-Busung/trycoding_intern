@@ -1,0 +1,174 @@
+/* chapter css의 button과 약간 다르다. Chapter 컴포넌트에 import */
+#funcbuttons { 
+  padding: 0;
+  left: 35%;
+  width: 30%;
+  margin: 1.25rem 0.5rem 3rem 0;
+}
+.fb {
+    width: 100%;
+    font-weight: bold;
+    border: none;
+    padding: 10px 14px;
+}
+#save {
+    background-color: hsl(209, 94%, 66%);
+    color: hsl(45, 60%, 96%);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    border-radius: 5px;
+}
+#save:hover {
+    background-color:hsl(51, 100%, 70%);
+    color: rgba(0, 106, 136,0.7);
+}
+#add {
+    background-color: hsl(40, 91%, 61%);
+    color: hsl(45, 60%, 96%);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    border-radius: 5px;
+}
+#add:hover {
+    background-color:hsl(51, 100%, 70%);
+    color: rgba(0, 106, 136,0.7);
+}
+#delete {
+    background-color: hsl(0, 94%, 70%);
+    color: hsl(45, 60%, 96%);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    border-radius: 5px;
+}
+#delete:hover {
+    background-color:hsl(51, 100%, 70%);
+    color: rgba(0, 106, 136,0.7);
+}
+.scrollbar {
+    display: none !important;
+}
+@keyframes visible{
+    0% {opacity: 0.1;}
+    20% {opacity: 0.3;}
+    40% {opacity: 0.5;}
+    60% {opacity: 0.7;}
+    80% {opacity: 0.9;}
+    100% {opacity: 1;}
+}
+.chapterItem .btn-group {
+    width: 100%;
+}
+.chapterItem {
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    animation: visible 0.5s;
+    animation-fill-mode: forwards;
+}
+.chapter-title {
+    text-align: left;
+    width: 90%;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: hsla(195, 82%, 60%);
+    background-origin: content-box;
+    color: hsl(45, 60%, 96%);
+    border-left: 11px solid hsl(51, 100%, 70%);
+    transition: all 0.8s;
+    font-family: 'Orbitron', sans-serif;
+}
+.chapter-title h2 {
+    margin-left: 30px;
+}
+.btn-group a {
+    display: block;
+    width: 10%;
+}
+.go-btn{
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0.4rem;
+    background-color: hsl(51, 100%, 70%);
+    color: rgba(0, 106, 136,0.7);
+    transition: padding 0.5s;
+}
+.go-btn span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.go-btn span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -30px;
+    color: hsl(45, 60%, 96%);
+    transition: 0.5s;
+}
+.go-btn:hover span {
+    padding-right: 20px;
+}
+.go-btn:hover span:after {
+    opacity: 1;
+    right: -5px;
+}
+.chapter-des {
+    text-align: left;
+    background-color: hsl(45, 60%, 96%);
+    overflow: hidden;
+    height: 50px;
+    padding: 15px 20px 15px 55px;
+    margin: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: 500;
+    color: rgba(80,80,80, 0.6);
+}
+button.chapter-title:hover {
+    color: rgba(0, 179, 237, 0.6) !important;
+    background-color: hsl(45, 60%, 96%) !important;
+}
+button.go-btn:hover {
+    color: hsl(45, 60%, 96%) !important;
+    background-color: hsl(51, 100%, 50%);
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 768px ) {
+ 
+  #funcbuttons {
+      width: 70%;
+      height: auto;
+      margin: 0 auto 1.5rem;
+      padding: 0;
+      left: 0;
+  }
+  .fb {
+    font-size: 18px;
+  }
+  .chapterItem {
+    margin-bottom: 1.65rem;
+  }
+  .chapterItem .btn-group {
+    width: 100%;
+    height: 3.2rem;
+  }
+  .go-btn, .chapter-title {
+      width: 70%;
+      font-size: 16px;
+      text-align: center;
+      padding: 0;
+      line-height: 3rem;
+  }
+  .btn-group a {
+      width: 20%;
+  }
+  .go-btn {
+      font-size: 20px;
+      width: 100%;
+  }
+}

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+#funcbuttons {
+    padding: 0;
+    left: 40%;
+    width: auto;
+    margin-right: 8px;
+}
+.fb {
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 14px;
+}
+.stageholder {
+    display: inline-block;
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+    width: 152px;
+}
+#stagewrapper {
+    width: 100%;
+    height: 89%;
+    margin: 0 auto;
+}
+#stagewrapper ul, li{
+    padding: 0;
+    margin: 0 auto;
+}
+@keyframes visible{
+    0% {opacity: 0.1;}
+    20% {opacity: 0.3;}
+    40% {opacity: 0.5;}
+    60% {opacity: 0.7;}
+    80% {opacity: 0.9;}
+    100% {opacity: 1;}
+}
+#stagewrapper li {
+    display: inline-block;
+    width: 105px;
+    height: 75px;
+    margin: 1.65rem;
+    margin-bottom: 0;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 6px 10px 2px rgba(255, 255, 255, 0.2);
+    animation: visible 0.3s;
+    animation-fill-mode: forwards;
+    border-left: 10px solid #A9E2F3;
+    transition: margin 0.7s;
+}
+@keyframes unlocked {
+    50%, 100% {
+        background-image: url("unlock.png");
+    }
+}
+#stagewrapper li::after {
+    content: '';
+    width: 64px;
+    height: 70px;
+    background-image: url('code.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0;
+    top: 35px;
+    right: -30px;
+    transition: 1s;
+    border: none;
+}
+#stagewrapper li:hover {
+    margin-left: -35px;
+}
+#stagewrapper li:hover button {
+    background-image: linear-gradient(to right top, hsla(0,0%,85%) ,hsla(0,0%,90%) 60%, hsla(0,0%,95%));
+}
+#stagewrapper li:hover::after{
+    opacity: 1;
+    right: -20px;
+    animation: unlocked 1.2s ease 0.7s forwards;
+}
+
+li button {
+    font-weight: bold;
+    line-height: 70px;
+    color:  #424242;
+    font-family: 'Orbitron', sans-serif;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(to right top, hsla(0,0%,70%) ,hsla(0,0%,85%) 60%, hsla(0,0%,90%));
+    padding: 0;
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    outline: none !important;
+}
+li a:hover {
+    color: #555;
+    background-color: white;
+    text-decoration: none;
+}
+div.dropdown-menu {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    float: none !important;
+    background-color: initial;
+    left: -50px !important;
+}
+@keyframes stagedes-visible{
+    0% {height: 0px; opacity: 0;}
+    10%{height: 10px; opacity: 0.2;}
+    15%{height: 25px; opacity: 0.4;}
+    20% {height: 50px; opacity: 0.6;}
+    25%{height: 65px; opacity: 0.8;}
+    35%{height: 80px; opacity: 1;}
+    40% {height: 100px;}
+    60% {height: 150px;}
+    80% {height: 180px;}
+    100% {height: 210px;}
+}
+div.stagedes {
+    color: hsl(45, 60%, 96%);
+    width: 400px;
+    height: 210px;
+    border: none !important;
+    background-color: transparent;
+    animation: stagedes-visible 0.8s linear;
+    animation-fill-mode: forwards;
+}/*height 1부터*/
+
+/*tablet image*/
+.card-body {
+    background-image: url("tablet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 401px 200px;
+    border-radius: 10px;
+    padding: 1rem 2.75rem 1rem;
+    padding-right: 4.41rem;
+    overflow: hidden;
+}
+
+@keyframes screen-visible{
+    0% {height: 1px; opacity: 0;}
+    20% {height: 20px; opacity: 0.2;}
+    40% {height: 50px; opacity: 0.4;}
+    60% {height: 70px; opacity: 0.6;}
+    80% {height: 100px; opacity: 0.8;}
+    100% {height: 127px; opacity: 1;}
+  }
+.card-body div {
+    padding: 3px;
+    padding-left: 10px;
+    overflow: auto;
+    font-family: 'Roboto Mono', monospace;
+    color: hsla(60,100%,50%);
+    width: 263.695px;
+    height: 127px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right top, rgba(49, 180, 4, 0.3), rgba(75,180,80,0.5) 70%, rgba(236,248,224, 0.6));
+    animation: screen-visible 1s linear -0.2s;
+    animation-fill-mode: forwards;
+}/*height 1부터*//*description 화면*/
+::-webkit-scrollbar {
+    display: none !important;
+}
+@keyframes line-visible{
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    40% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 0.3;}
+    100% {opacity: 1;}
+}
+/*전선*/
+#line {
+    position: absolute;
+    width: 85%;
+    height: 20px;
+    border-left: 3px solid hsl(0, 94%, 70%);
+    border-right: 3px solid hsl(0, 94%, 70%);
+    border-radius: 5px;
+    background-color: transparent;
+    left: 1.7rem;
+    top: 9.7rem;
+    padding: 0 4px;
+    animation: line-visible 1s;
+    animation-fill-mode: forwards;
+}/*opacity 조절*/
+#line div {
+    border-left: 3px solid hsl(209, 94%, 66%);
+    border-right: 3px solid hsl(209, 94%, 66%);
+    border-radius: 5px;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    animation: line-visible 1s;
+    animation-fill-mode: forwards;
+}
+.card-footer{
+    padding: 0 !important;
+    margin-top: 5px;
+}
+div.stagedes a {
+    height: auto;
+    width: auto;
+    display: block;
+    overflow: hidden;
+}/*height 1부터*/
+div.stagedes a button {
+    border: none !important;
+    color: hsl(45, 60%, 96%);
+    background-image: linear-gradient(to bottom, hsla(40,91%,50%, 0.9) 75%, hsla(38,91%,60%, 0.9));
+    transition: all 0.8s;
+}
+div.stagedes a button:hover {
+    background-image:linear-gradient(to top, hsl(51, 100%, 70%) 20%, hsl(51, 100%, 75%));
+    color: rgba(0, 106, 136,0.7);
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 768px ) {
+    #funcbuttons {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    left: 0;
+    }
+    .fb {
+        font-size: 18px;
+    }
+    #stagewrapper {
+        padding: none;
+        margin: 0 1.25rem;
+    }
+}
