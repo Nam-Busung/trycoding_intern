@@ -5,8 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 모듈설치 후
 
 node_modules/phaser/build/phaser.js 상단에
-###var PIXI = require('./custom/pixi');
-###var p2 = require('./custom/p2');
+### var PIXI = require('./custom/pixi');
+### var p2 = require('./custom/p2');
 추가하여야 phaser PIXI 오류가 뜨지 않습니다.
 
 
